@@ -17,3 +17,6 @@ D Ortho
 
 FRCS (Tr & Orth)
 
+<style> #quarto-search { display: none !important; } .quarto-search-button { display: none !important; } .quarto-navbar-tools { display: none !important; } #quarto-header .quarto-navbar .quarto-navbar-tools { display: none !important; } </style>
+
+
