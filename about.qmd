@@ -1,4 +1,19 @@
 ---
-title: "About"
+title: "About The Expert"
+about: 
+  template: jolla
+  image: image/profile.jpeg
 ---
+
+I am a Professor of Orthopaedic Surgery and Sr Consultant of Paediatric Orthopaedic division, Amala Institute of Medical Sciences, Thrissur. 
+
+Qualifications:
+
+MBBS
+
+MS Ortho
+
+D Ortho
+
+FRCS (Tr & Orth)
 
