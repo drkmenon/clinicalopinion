@@ -3,11 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "clinical"
+  title: "Orthpaedic Expert"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - about.qmd
 
 format:
@@ -16,7 +14,8 @@ format:
       - cosmo
       - brand
     css: styles.css
-    toc: true
+    toc: false
+    search: false
 
 
 

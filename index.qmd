@@ -1,5 +1,122 @@
 ---
-title: "clinical opinion"
+title: "Expert Orthopaedic Opinion"
+format:
+  html:
+    theme: cosmo
+    toc: false
 ---
 
-<style> .tabs { display: flex; border-bottom: 2px solid #cfe2ff; margin-bottom: 20px; } .tab { padding: 12px 20px; cursor: pointer; background: #e7f1ff; margin-right: 5px; border-radius: 10px 10px 0 0; font-weight: bold; color: #0a58ca; } .tab.active { background: #0d6efd; color: white; } .tab-content { display: none; padding: 20px; border: 2px solid #cfe2ff; border-radius: 0 10px 10px 10px; background: #ffffff; } .tab-content.active { display: block; } .button-pay { padding: 14px 22px; background: #0d6efd; color: white; border-radius: 10px; text-decoration: none; font-size: 18px; } </style> <div class="tabs"> <div class="tab active" onclick="openTab('pay')">Payment</div> <div class="tab" onclick="openTab('form')">Form</div> </div> <div id="pay" class="tab-content active"> <h2>Complete Payment</h2> <p>Please click the button below to complete payment.</p> <a class="button-pay" href="https://rzp.io/l/YOUR_PAYMENT_LINK" target="_blank"> Pay Now </a> </div> <div id="form" class="tab-content"> <h2>Registration Form</h2> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeuY9CSXvZF_zIpN-l_Tjvd5pK__9_s3o0YolGT4vjHyxDO1g/viewform?embedded=true" width=100% height="976" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> </div> <script> function openTab(tabId) { var tabs = document.querySelectorAll('.tab'); var contents = document.querySelectorAll('.tab-content'); tabs.forEach(t => t.classList.remove('active')); contents.forEach(c => c.classList.remove('active')); document.querySelector('.tab[onclick="openTab(\''+tabId+'\')"]').classList.add('active'); document.getElementById(tabId).classList.add('active'); } </script>
+<style>
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+.header-box {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.header-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.header-sub {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #444;
+}
+.payment-small {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #6c757d;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.payment-small:hover {
+  background: #5a6268;
+}
+footer {
+  margin: 70px 0 30px 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+</style>
+
+<div class="header-box">
+  <div class="header-title"> What we do </div>
+  <div class="header-sub">A clear, expert review of your diagnosis — from home, without delays.</div>
+</div>
+
+<section>
+  <div class="section-title">Why Seek an Expert Opinion?</div>
+  <p>When you or a loved one receives an Orthopaedics diagnosis, clarity matters. An expert review helps confirm the diagnosis, explore treatment options, and ensure you’re on the best path forward — without unnecessary procedures or uncertainty.</p>
+</section>
+
+<section>
+  <div class="section-title">Ideal When You Need</div>
+  <ul>
+    <li>Confirmation of a significant orthopaedic diagnosis.</li>
+    <li>Confidence before undergoing surgery or major treatment.</li>
+    <li>Review of complex or changing medical conditions.</li>
+    <li>Insight from an experienced specialist without traveling.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="section-title">How It Works</div>
+  <ol>
+    <li><strong>Register:</strong> Provide basic details.</li>
+    <li><strong>Record Collection:</strong> Upload your medical reports and history.</li>
+    <li><strong>Expert Review:</strong> A specialist examines your case and prepares a detailed opinion.</li>
+  </ol>
+</section>
+
+<section>
+  <div class="section-title">Service Options</div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Plan</th>
+        <th>What’s Included</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Written Expert Opinion</td>
+        <td>
+          Comprehensive review<br>
+          Detailed written expert report
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="section-title">Payment</div>
+  <p>A small one-time fee is required to initiate your case review.</p>
+  <a class="payment-small" href="https://rzp.io/l/YOUR_PAYMENT_LINK" target="_blank">
+    Proceed to Payment
+  </a>
+</section>
+
+<footer>
+  © 2025 Your Clinic Name
+</footer>
+
+<style> #quarto-search { display: none !important; } .quarto-search-button { display: none !important; } .quarto-navbar-tools { display: none !important; } #quarto-header .quarto-navbar .quarto-navbar-tools { display: none !important; } </style>
+
