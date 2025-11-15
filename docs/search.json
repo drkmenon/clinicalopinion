@@ -1,16 +1,9 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "clinical opinion",
     "section": "",
-    "text": "Registration Patient Details Consent Upload Documents Payment\n\n\n\n\nRegistration\n\n\nName  Email  Phone  Continue\n\n\n\n\n\nPatient Details\n\n\nAge  Sex  Select Male Female Other  Symptoms\n\nDiagnosis\n\n\nContinue\n\n\n\n\n\n\nConsent\n\n\nPlease accept the consent to continue.\n\n I agree to the terms  Digital Signature  Continue\n\n\n\n\nUpload Documents\n\n\n\nFiles are stored temporarily. Final storage uses Google Drive or S3.\n\n\nContinue\n\n\n\n\n\nPayment\n\n\nService fee: ₹999\n\nSubmit"
+    "text": "Registration Patient Details Consent Upload Documents Payment\n\n\n\n\nRegistration\n\n\nName  Email  Phone  Continue\n\n\n\n\n\nPatient Details\n\n\nAge  Sex  Select Male Female Other  Symptoms\n\nDiagnosis\n\n\nContinue\n\n\n\n\n\n\nConsent\n\n I accept the consent terms  Digital Signature  Continue\n\n\n\n\nUpload Documents\n\n Continue\n\n\n\n\nPayment\n\n\nService fee: ₹999\n\nSubmit"
   }
 ]

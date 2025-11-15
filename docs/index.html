@@ -132,10 +132,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- GOOGLE SHEET BACKEND ENDPOINT -->
-<!-- Replace with your Apps Script URL -->
 <script> const API_URL = "https://script.google.com/macros/s/AKfycbxZxUDKYnVGr4KTasfbRC2-vgCqJCU0CjXYDdTp0bSa0q34zxdZhTXk4jsx6uybsk1VwQ/exec"; </script>
-<style> body { font-family: Arial, sans-serif; background: #f2f6ff; padding: 20px; } .nav-tabs { display: flex; margin-bottom: 20px; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.08); } .nav-tabs button { flex: 1; padding: 14px; border: none; background: #e7efff; cursor: pointer; font-size: 17px; border-right: 1px solid #d9e4ff; transition: 0.2s; } .nav-tabs button:last-child { border-right: none; } .nav-tabs button.active { background: #ffffff; font-weight: bold; color: #0066ff; border-bottom: 3px solid #0066ff; } .tab-content { background: #ffffff; padding: 22px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); } input, select, textarea { width: 100%; padding: 12px; margin-top: 6px; margin-bottom: 14px; border-radius: 12px; border: 1px solid #cbd7ff; background: #f7faff; } button.primary { background: #0066ff; color: white; padding: 12px 20px; border: none; border-radius: 12px; cursor: pointer; font-size: 16px; } button.primary:hover { background: #004dcc; } </style>
+<style> body { font-family: Arial, sans-serif; background: #f2f6ff; padding: 20px; } .nav-tabs { display: flex; margin-bottom: 20px; background: #ffffff; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); } .nav-tabs button { flex: 1; padding: 14px; border: none; background: #e7efff; cursor: pointer; font-size: 16px; border-right: 1px solid #d6e0ff; } .nav-tabs button:last-child { border-right: none; } .nav-tabs button.active { background: #ffffff; color: #0066ff; font-weight: bold; border-bottom: 3px solid #0066ff; } .tab-content { background: #ffffff; padding: 22px; border-radius: 16px; box-shadow: 0 3px 12px rgba(0,0,0,0.1); } input, select, textarea { width: 100%; padding: 12px; margin-top: 6px; margin-bottom: 14px; border-radius: 12px; border: 1px solid #cbd7ff; background: #f9fbff; } button.primary { background: #0066ff; color: white; padding: 12px 20px; border: none; border-radius: 12px; cursor: pointer; font-size: 16px; } button.primary:hover { background: #004dcc; } </style>
 <div class="nav-tabs">
 <button class="active" onclick="showTab('reg', event)">Registration</button> <button onclick="showTab('patient', event)">Patient Details</button> <button onclick="showTab('consent', event)">Consent</button> <button onclick="showTab('upload', event)">Upload Documents</button> <button onclick="showTab('payment', event)">Payment</button>
 </div>
@@ -145,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 Registration
 </h3>
 <form id="regForm">
-<label>Name</label> <input id="name" required=""> <label>Email</label> <input id="email" type="email" required=""> <label>Phone</label> <input id="phone" type="text" required=""> <button class="primary" type="button" onclick="nextTab('regForm')">Continue</button>
+<label>Name</label> <input id="name" required=""> <label>Email</label> <input id="email" type="email" required=""> <label>Phone</label> <input id="phone" required=""> <button class="primary" type="button" onclick="nextTab('regForm')">Continue</button>
 </form>
 </div>
 <!-- TAB 2 -->
@@ -155,9 +153,9 @@ Patient Details
 </h3>
 <form id="patientForm">
 <label>Age</label> <input id="age" type="number" required=""> <label>Sex</label> <select id="sex" required=""> <option value="">Select</option> <option>Male</option> <option>Female</option> <option>Other</option> </select> <label>Symptoms</label>
-<textarea id="symptoms" rows="4" required=""></textarea>
+<textarea id="symptoms" required=""></textarea>
 <label>Diagnosis</label>
-<textarea id="diagnosis" rows="4"></textarea>
+<textarea id="diagnosis"></textarea>
 <button class="primary" type="button" onclick="nextTab('patientForm')">
 Continue
 </button>
@@ -168,23 +166,14 @@ Continue
 <h3 class="anchored">
 Consent
 </h3>
-<p>
-Please accept the consent to continue.
-</p>
-<p><label><input id="agree" type="checkbox" required=""> I agree to the terms</label> <br><br> <label>Digital Signature</label> <input id="signature" required=""> <button class="primary" type="button" onclick="nextTab('consentForm')">Continue</button></p>
+<p><input id="agree" type="checkbox" required=""> I accept the consent terms <br><br> <label>Digital Signature</label> <input id="signature" required=""> <button class="primary" type="button" onclick="nextTab('consentTab')">Continue</button></p>
 </div>
 <!-- TAB 4 -->
 <div id="upload" class="tab-content" style="display:none">
 <h3 class="anchored">
 Upload Documents
 </h3>
-<input id="files" type="file" multiple="" accept=".pdf,.jpg,.png">
-<p>
-Files are stored temporarily. Final storage uses Google Drive or S3.
-</p>
-<button class="primary" type="button" onclick="nextTab('uploadForm')">
-Continue
-</button>
+<p><input id="files" type="file" multiple="" accept=".pdf,.jpg,.png"> <button class="primary" type="button" onclick="nextTab('uploadTab')">Continue</button></p>
 </div>
 <!-- TAB 5 -->
 <div id="payment" class="tab-content" style="display:none">
@@ -196,7 +185,7 @@ Service fee: ₹999
 </p>
 <button class="primary" onclick="submitAll()">Submit</button>
 </div>
-<script> // TAB SWITCHING function showTab(tabId, evt) { document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none'); document.getElementById(tabId).style.display = 'block'; document.querySelectorAll('.nav-tabs button').forEach(b => b.classList.remove('active')); evt.target.classList.add('active'); } // VALIDATION + AUTOSAVE function nextTab(formId) { let form = document.getElementById(formId); let inputs = form.querySelectorAll("input, select, textarea"); for (let i of inputs) { if (i.hasAttribute("required") && !i.value) { alert("Please fill all required fields"); return; } } // auto save to local storage inputs.forEach(i => localStorage.setItem(i.id, i.value)); // move to next tab const buttons = document.querySelectorAll(".nav-tabs button"); for (let i = 0; i < buttons.length; i++) { if (buttons[i].classList.contains("active")) { buttons[i + 1].click(); break; } } } // LOAD AUTO-SAVED FIELDS window.onload = function() { document.querySelectorAll("input, textarea, select").forEach(i => { if (localStorage.getItem(i.id)) { i.value = localStorage.getItem(i.id); } }); } // SUBMIT TO GOOGLE SHEETS async function submitAll() { const data = { name: localStorage.getItem("name"), email: localStorage.getItem("email"), phone: localStorage.getItem("phone"), age: localStorage.getItem("age"), sex: localStorage.getItem("sex"), symptoms: localStorage.getItem("symptoms"), diagnosis: localStorage.getItem("diagnosis"), signature: localStorage.getItem("signature"), }; const res = await fetch(API_URL, { method: "POST", body: JSON.stringify(data), headers: { "Content-Type": "application/json" } }); let out = await res.text(); alert("Submitted successfully: " + out); } </script>
+<script> // -------- TAB SWITCHING (FIXED) ---------- function showTab(tabId, evt) { document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none'); document.getElementById(tabId).style.display = 'block'; document.querySelectorAll('.nav-tabs button').forEach(b => b.classList.remove('active')); evt.target.classList.add('active'); } // -------- VALIDATION + AUTOSAVE (FIXED) ---------- function nextTab(formId) { let container = document.getElementById(formId); if (!container) console.log("Warning: Missing formId: " + formId); let inputs = container ? container.querySelectorAll("input, textarea, select") : []; for (let i of inputs) { if (i.hasAttribute("required") && !i.value) { alert("Please fill all required fields"); return; } } inputs.forEach(i => localStorage.setItem(i.id, i.value)); const tabs = document.querySelectorAll(".nav-tabs button"); for (let i = 0; i < tabs.length; i++) { if (tabs[i].classList.contains("active")) { tabs[i + 1].click(); break; } } } // ------- AUTO-LOAD SAVED DATA -------- window.onload = function() { document.querySelectorAll("input, select, textarea").forEach(i => { if (localStorage.getItem(i.id)) { i.value = localStorage.getItem(i.id); } }); } // ------ SUBMIT TO GOOGLE SHEETS ------- async function submitAll() { const payload = { name: localStorage.getItem("name"), email: localStorage.getItem("email"), phone: localStorage.getItem("phone"), age: localStorage.getItem("age"), sex: localStorage.getItem("sex"), symptoms: localStorage.getItem("symptoms"), diagnosis: localStorage.getItem("diagnosis"), signature: localStorage.getItem("signature") }; const res = await fetch(API_URL, { method: "POST", body: JSON.stringify(payload), headers: {"Content-Type": "application/json"} }); let text = await res.text(); alert("Submitted: " + text); } </script>
 
 
 
