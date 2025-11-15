@@ -1,5 +1,5 @@
 ---
-title: "Plain Language illness summary"
+title: "Plain Language Illness Summary"
 format:
   html:
     theme: cosmo
@@ -14,25 +14,26 @@ format:
 </div>
 
 <section>
-  <div class="section-title">Why Seek an Expert Opinion?</div>
-  <p>When you or a loved one wants to know what a doctor mean by an Orthopaedics diagnosis, clarity and language matters. An expert summary helps understand the diagnosis and treatment options, ensuring you’re getting the best knowledge in plain language — without unnecessary procedures or uncertainty.</p>
+  <div class="section-title">Why Get an Expert Explanation?</div>
+  <p>Medical terms can feel confusing or overwhelming. When you receive an orthopaedic diagnosis, understanding it clearly helps you make confident decisions. A plain-language summary breaks down medical words, explains what the condition truly means, and gives you clarity without fear or uncertainty.</p>
 </section>
 
 <section>
-  <div class="section-title">Ideal When You Need</div>
+  <div class="section-title">When This Service Helps Most</div>
   <ul>
-    <li>to understand a significant orthopaedic diagnosis.</li>
-    <li>to understand what it is before undergoing surgery or major treatment.</li>
-    <li>insight about complex or changing orthopaedic conditions.</li>
-    <li>Insight from an experienced specialist without traveling.</li>
+    <li>You received a significant or complex orthopaedic diagnosis.</li>
+    <li>You want to understand a condition before surgery or major treatment.</li>
+    <li>Your doctor’s explanation felt unclear or too technical.</li>
+    <li>You want expert insight without having to travel.</li>
   </ul>
 </section>
 
 <section>
   <div class="section-title">How It Works</div>
   <ol>
-    <li><strong>Register:</strong> Provide details about the orthopaedic condition you want to understand.</li>
-    <li><strong>Expert Review:</strong> A specialist examines your doubt and prepares a detailed explaination.</li>
+    <li><strong>Register:</strong> Tell us the diagnosis or doubts you want explained.</li>
+    <li><strong>Expert Review:</strong> A specialist reviews your details and prepares a clear explanation.</li>
+    <li><strong>Receive Summary:</strong> You get a personalised, easy-to-understand, evidence-based report.</li>
   </ol>
 </section>
 
@@ -49,8 +50,9 @@ format:
       <tr>
         <td>Written Expert Summary</td>
         <td>
-          Comprehensive review in plain language<br>
-          Evidence based summary
+          • Easy-to-understand explanation<br>
+          • Condition summary in simple language<br>
+          • Evidence-based details explained clearly
       </tr>
     </tbody>
   </table>
