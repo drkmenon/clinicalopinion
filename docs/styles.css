@@ -1,2 +1,52 @@
 /* css styles */
 
+<style>
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+.header-box {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.header-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.header-sub {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #444;
+}
+.payment-small {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #6c757d;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.payment-small:hover {
+  background: #5a6268;
+}
+footer {
+  margin: 70px 0 30px 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+</style>

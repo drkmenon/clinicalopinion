@@ -1,78 +1,29 @@
 ---
-title: "Expert Orthopaedic Opinion"
+title: "Plain Language illness summary"
 format:
   html:
     theme: cosmo
     toc: false
 ---
 
-<style>
-body {
-  background: #f9f9f9;
-  color: #333;
-}
-.header-box {
-  background: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.header-title {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.header-sub {
-  font-size: 1.2rem;
-  color: #6c757d;
-}
-section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-.section-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #444;
-}
-.payment-small {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #6c757d;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 1rem;
-}
-.payment-small:hover {
-  background: #5a6268;
-}
-footer {
-  margin: 70px 0 30px 0;
-  text-align: center;
-  color: #888;
-  font-size: 0.9rem;
-}
-</style>
+
 
 <div class="header-box">
-  <div class="header-title"> What we do </div>
-  <div class="header-sub">A clear, expert review of your diagnosis — from home, without delays.</div>
+  <div class="header-title"> What you get </div>
+  <div class="header-sub">A clear, expert written personalised plain language summary of orthopaedic illness — from home, without delays.</div>
 </div>
 
 <section>
   <div class="section-title">Why Seek an Expert Opinion?</div>
-  <p>When you or a loved one receives an Orthopaedics diagnosis, clarity matters. An expert review helps confirm the diagnosis, explore treatment options, and ensure you’re on the best path forward — without unnecessary procedures or uncertainty.</p>
+  <p>When you or a loved one wants to know what a doctor mean by an Orthopaedics diagnosis, clarity and language matters. An expert summary helps understand the diagnosis and treatment options, ensuring you’re getting the best knowledge in plain language — without unnecessary procedures or uncertainty.</p>
 </section>
 
 <section>
   <div class="section-title">Ideal When You Need</div>
   <ul>
-    <li>Confirmation of a significant orthopaedic diagnosis.</li>
-    <li>Confidence before undergoing surgery or major treatment.</li>
-    <li>Review of complex or changing medical conditions.</li>
+    <li>to understand a significant orthopaedic diagnosis.</li>
+    <li>to understand what it is before undergoing surgery or major treatment.</li>
+    <li>insight about complex or changing orthopaedic conditions.</li>
     <li>Insight from an experienced specialist without traveling.</li>
   </ul>
 </section>
@@ -80,9 +31,8 @@ footer {
 <section>
   <div class="section-title">How It Works</div>
   <ol>
-    <li><strong>Register:</strong> Provide basic details.</li>
-    <li><strong>Record Collection:</strong> Upload your medical reports and history.</li>
-    <li><strong>Expert Review:</strong> A specialist examines your case and prepares a detailed opinion.</li>
+    <li><strong>Register:</strong> Provide details about the orthopaedic condition you want to understand.</li>
+    <li><strong>Expert Review:</strong> A specialist examines your doubt and prepares a detailed explaination.</li>
   </ol>
 </section>
 
@@ -97,10 +47,10 @@ footer {
     </thead>
     <tbody>
       <tr>
-        <td>Written Expert Opinion</td>
+        <td>Written Expert Summary</td>
         <td>
-          Comprehensive review<br>
-          Detailed written expert report
+          Comprehensive review in plain language<br>
+          Evidence based summary
       </tr>
     </tbody>
   </table>
@@ -108,14 +58,14 @@ footer {
 
 <section>
   <div class="section-title">Payment</div>
-  <p>A small one-time fee is required to initiate your case review.</p>
+  <p>A small one-time fee is required to initiate your request.</p>
   <a class="payment-small" href="https://rzp.io/l/YOUR_PAYMENT_LINK" target="_blank">
     Proceed to Payment
   </a>
 </section>
 
 <footer>
-  © 2025 Your Clinic Name
+  © 2025 Simplify diagnosis
 </footer>
 
 <style> #quarto-search { display: none !important; } .quarto-search-button { display: none !important; } .quarto-navbar-tools { display: none !important; } #quarto-header .quarto-navbar .quarto-navbar-tools { display: none !important; } </style>
