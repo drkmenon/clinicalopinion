@@ -1,0 +1,66 @@
+---
+title: "How It Works"
+format:
+  html:
+    theme: cosmo
+    toc: false
+    search: false
+---
+
+Below is a simple, step-by-step explanation of how the Plain-Language Orthopaedic Summary service works.
+
+## 1. Make a One-Time Payment
+To begin your request, you complete a simple one-time payment using our secure payment link.
+
+After payment, you will be automatically redirected to the protected form page.
+
+**Payment link:**  
+[Proceed to Payment](https://rzp.io/l/YOUR_PAYMENT_LINK)
+
+---
+
+## 2. Fill Out the Details Form
+After payment, you will reach a protected form where you can provide:
+
+- your diagnosis or question  
+- your symptoms and history  
+- upload X-rays / MRI reports / medical notes  
+- your preferred email address for receiving the summary  
+
+Your information stays private and is used only to prepare your summary.
+
+---
+
+## 3. Expert Review
+An orthopaedic specialist reviews your uploaded reports and description.
+
+They interpret the medical terms, understand the context, and prepare a clear explanation tailored to you.
+
+---
+
+## 4. Your Summary Is Prepared
+The specialist writes a personalised, easy-to-read, plain-language summary.
+
+This includes:
+
+- what your diagnosis means  
+- why it happens  
+- what your tests show  
+- treatment options in simple language  
+- what questions you can ask your doctor next  
+
+---
+
+## 5. Delivered to Your Email
+Your completed summary is sent directly to the email you provided.
+
+Most reports are delivered within **24–48 hours**.
+
+If you need clarification, you can reply to the email and ask follow-up questions.
+
+---
+<footer>
+  © 2025 Simplify diagnosis
+</footer>
+
+<style> #quarto-search { display: none !important; } .quarto-search-button { display: none !important; } .quarto-navbar-tools { display: none !important; } #quarto-header .quarto-navbar .quarto-navbar-tools { display: none !important; } </style>
