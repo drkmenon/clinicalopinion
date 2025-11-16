@@ -14,8 +14,11 @@ To begin your request, you complete a simple one-time payment using our secure p
 
 After payment, you will be automatically redirected to the protected form page.
 
-**Payment link:**  
-[Proceed to Payment](https://rzp.io/l/YOUR_PAYMENT_LINK)
+</section>
+<a class="payment-small" href="https://rzp.io/l/YOUR_PAYMENT_LINK" target="_blank">
+    Proceed to Payment
+  </a>
+</section>
 
 ---
 
