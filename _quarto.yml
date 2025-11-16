@@ -6,9 +6,9 @@ website:
   title: "Simplify diagnosis"
   navbar:
     left:
-      - about.qmd
       - how.qmd
       - faq.qmd
+      - about.qmd
 
 format:
   html:
